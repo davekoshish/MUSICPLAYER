@@ -1,0 +1,62 @@
+@import '_Song';
+@import '_Player';
+@import '_library';
+@import '_nav';
+
+h1,h2,h3{
+    color:rgb(54, 54, 54);
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url("../img/1st.png");
+    background-size:cover;
+    transition:30s;
+    
+    animation: animate;
+    animation-direction:alternate-reverse ;
+    animation-duration: 40s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out;
+
+}
+
+@keyframes animate {
+    0%{
+        background-image: url("../img/2.png");
+    }
+    20%{
+        background-image: url("../img/1st.png");
+    }
+    40%{
+        background-image: url("../img/3rd.png");
+    }
+    60%{
+        background-image: url("../img/4.png");
+    }
+    80%{
+        background-image: url("../img/5.png");
+    }
+    80%{
+        background-image: url("../img/6th.png");
+    }
+    100%{
+        background-image: url("../img/7.png");
+    }
+    
+    
+
+    
+}
+
+h3,h4{
+    font-weight: 400;
+    color:rgb(100, 100, 100);
+}
+.App{
+transition: all 0.5s ease;
+}
+.library-active{
+    margin-left: 30%;
+}
